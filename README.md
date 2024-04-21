@@ -1,1 +1,1 @@
-# Practica6-Buses-de-comunicaci-n-SPI
+# Practica6-Buses de comunicación SPI
