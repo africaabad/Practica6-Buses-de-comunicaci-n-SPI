@@ -1,4 +1,4 @@
-# PRACTICA 6 :  Buses de comunicación II (SPI)  
+# PRACTICA 5 :  Buses de comunicación II (SPI)  
 
 El objetivo de la practica es comprender el funcionamiento del bus spi 
 Alumnos: **Bernat Rubiol i Àfrica Abad**
@@ -40,30 +40,33 @@ graph TD;
     E --> B;
 ```
 
-- Inicio del programa:
+1. Inicio del programa:
 El programa comienza inicializando la comunicación serial y el bus SPI, necesario para comunicarse con el lector RFID MFRC522.
 
-- Bucle principal:
+2. Bucle principal:
 El programa entra en un bucle infinito donde continuamente verifica si hay una nueva tarjeta RFID presente.
 
-- Verificación de nueva tarjeta:
+3. Verificación de nueva tarjeta:
 Se verifica si hay una nueva tarjeta RFID presente utilizando la función `mfrc522.PICC_IsNewCardPresent()`.
 
-- Lectura del UID:
+4. Lectura del UID:
 Si se detecta una nueva tarjeta, se procede a leer su UID utilizando la función `mfrc522.PICC_ReadCardSerial()`.
 
-- Envío del UID por el puerto serie:
+5. Envío del UID por el puerto serie:
 Una vez leído el UID, se envía por el puerto serie utilizando la función `Serial.print()`. Esto permite visualizar el UID en la consola serial para propósitos de depuración y verificación del funcionamiento.
 
-- Finalización de la lectura de la tarjeta:
+6. Finalización de la lectura de la tarjeta:
 Después de completar la lectura del UID de la tarjeta, se finaliza la lectura de la tarjeta actual con la función `mfrc522.PICC_HaltA()`.
 
-- Repetición del proceso:
+7. Repetición del proceso:
 Después de completar todas las operaciones, el programa vuelve al inicio del bucle para repetir el proceso y seguir leyendo tarjetas RFID.
 
 
 
-3. fotos del montaje 
+
+
+
+3.fotos del montaje 
 
 ![](montaje1.jpg)
 
