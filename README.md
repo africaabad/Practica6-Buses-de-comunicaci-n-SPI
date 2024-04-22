@@ -1,4 +1,4 @@
-# PRACTICA 5 :  Buses de comunicación II (SPI)  
+# PRACTICA 6 :  Buses de comunicación II (SPI)  
 
 El objetivo de la practica es comprender el funcionamiento del bus spi 
 Alumnos: **Bernat Rubiol i Àfrica Abad**
