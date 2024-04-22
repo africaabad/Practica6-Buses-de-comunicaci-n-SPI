@@ -40,27 +40,26 @@ graph TD;
     E --> B;
 ```
 
-1. Inicio del programa:
+- Inicio del programa:
 El programa comienza inicializando la comunicación serial y el bus SPI, necesario para comunicarse con el lector RFID MFRC522.
 
-2. Bucle principal:
+- Bucle principal:
 El programa entra en un bucle infinito donde continuamente verifica si hay una nueva tarjeta RFID presente.
 
-3. Verificación de nueva tarjeta:
+- Verificación de nueva tarjeta:
 Se verifica si hay una nueva tarjeta RFID presente utilizando la función `mfrc522.PICC_IsNewCardPresent()`.
 
-4. Lectura del UID:
+- Lectura del UID:
 Si se detecta una nueva tarjeta, se procede a leer su UID utilizando la función `mfrc522.PICC_ReadCardSerial()`.
 
-5. Envío del UID por el puerto serie:
+- Envío del UID por el puerto serie:
 Una vez leído el UID, se envía por el puerto serie utilizando la función `Serial.print()`. Esto permite visualizar el UID en la consola serial para propósitos de depuración y verificación del funcionamiento.
 
-6. Finalización de la lectura de la tarjeta:
+- Finalización de la lectura de la tarjeta:
 Después de completar la lectura del UID de la tarjeta, se finaliza la lectura de la tarjeta actual con la función `mfrc522.PICC_HaltA()`.
 
-7. Repetición del proceso:
+- Repetición del proceso:
 Después de completar todas las operaciones, el programa vuelve al inicio del bucle para repetir el proceso y seguir leyendo tarjetas RFID.
-
 
 
 
