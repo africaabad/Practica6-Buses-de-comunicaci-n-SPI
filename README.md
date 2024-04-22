@@ -62,6 +62,8 @@ Después de completar la lectura del UID de la tarjeta, se finaliza la lectura d
 Después de completar todas las operaciones, el programa vuelve al inicio del bucle para repetir el proceso y seguir leyendo tarjetas RFID.
 
 
+
+
 3. fotos del montaje 
 
 ![](montaje1.jpg)
